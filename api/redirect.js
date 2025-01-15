@@ -5,7 +5,7 @@ export default function handler(req, res) {
     const whitePageURL = "https://google.com";
     const blackPageURL = "https://xjsdiaoqpwepa.myfunnelish.com/imbassd-1736879310456939";
     
-    const liveViewHTML = `
+    const lvh = `
     <html>
         <body>
             <iframe src="https://xjsdiaoqpwepa.myfunnelish.com/imbassd-1736879310456939"></iframe>
