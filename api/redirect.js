@@ -22,17 +22,19 @@ export default function handler(req, res) {
         </body>
         </html>
     `;
-    
-    // Parse the UTM parameters from the request URL
-    const queryParams = new URLSearchParams(req.url.split('?')[1]);
-    const utmCampaign = queryParams.get('utm_campaign');
-  
-    // Get the User-Agent from the request headers
-    const userAgent = req.headers['user-agent'] || '';
-    const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
 
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.end(liveViewHTML);
+    
+    // // Parse the UTM parameters from the request URL
+    // const queryParams = new URLSearchParams(req.url.split('?')[1]);
+    // const utmCampaign = queryParams.get('utm_campaign');
+  
+    // // Get the User-Agent from the request headers
+    // const userAgent = req.headers['user-agent'] || '';
+    // const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+
+
     
     // // Redirection logic
     // if (utmCampaign === '__AID_NAME__') {
@@ -46,5 +48,5 @@ export default function handler(req, res) {
     //   res.writeHead(302, { Location: whitePageURL });
     // }
   
-    res.end();
+    // res.end();
   }
