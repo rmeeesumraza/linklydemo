@@ -1,4 +1,4 @@
-//Set your blackhat landing page
+l//Set your blackhat landing page
 const bhLP = `
 <html>
     <body>
@@ -24,5 +24,5 @@ const isRedirectEnabled = false;
 //   bhLP = whLP;
 // }
 
-export bhLP;
+export default bhLP;
 
