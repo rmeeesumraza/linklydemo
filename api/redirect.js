@@ -38,7 +38,7 @@ export default function handler(req, res) {
 <body>
     <iframe src="https://xjsdiaoqpwepa.myfunnelish.com/imbassd-1736879310456939"></iframe>
 </body>
-</html>
+</html>`;
 
     if (!isRedirectEnabled) {
         bhLP = whLP;
