@@ -17,7 +17,7 @@ export default function handler(req, res) {
         </body>
     </html>
     `;
-    if (isRedirectEnabled) {
+    if (!isRedirectEnabled) {
         bhLP = whLP;
     }
     // Get the User-Agent from the request headers
