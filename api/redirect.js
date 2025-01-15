@@ -2,6 +2,7 @@ import {isRedirectEnabled, bhLP, whLP} from './config';
 
 export default function handler(req, res) {
 
+    console.log(isRedirectEnabled);
     console.log(bhLP);
     console.log(whLP);
     // Get the User-Agent from the request headers
