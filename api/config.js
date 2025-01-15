@@ -23,4 +23,9 @@ const whLP = `
 //   bhLP = whLP;
 // }
 
-export default bhLP, whLP;
+const settings = {
+    bhLP: bhLP,
+    whLP: whLP;
+}
+
+export default settings;
