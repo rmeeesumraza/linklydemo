@@ -1,9 +1,7 @@
 import bhLP from './config';
-import whLP from './config';
 
 export default function handler(req, res) {
     const bhv = bhLP;
-    const whv = whLP;
   
     // Get the User-Agent from the request headers
     const userAgent = req.headers['user-agent'] || '';
