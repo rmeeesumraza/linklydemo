@@ -1,5 +1,5 @@
 // This file exports a boolean value to control redirection logic
-var isRedirectEnabled = true; // Change this value as needed
+const isRedirectEnabled = true; // Change this value as needed
 var bhLP = `
     <html>
         <body>
