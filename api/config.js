@@ -17,11 +17,11 @@ const whLP = `
 `;
 
 //Turn blackhat lander on or off - true = Black Hat - False = White Hat
-const isRedirectEnabled = true; 
+// const isRedirectEnabled = true; 
 
-if (isRedirectEnabled == true) {
-  bhLP = whLP;
-}
+// if (isRedirectEnabled == true) {
+//   bhLP = whLP;
+// }
 
 export default bhLP;
-export default whLP;
+// export default whLP;
