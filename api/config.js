@@ -1,4 +1,4 @@
-l//Set your blackhat landing page
+//Set your blackhat landing page
 const bhLP = `
 <html>
     <body>
@@ -17,12 +17,10 @@ const whLP = `
 `;
 
 //Turn blackhat lander on or off - true = Black Hat - False = White Hat
+const isRedirectEnabled = false; 
 
-// const isRedirectEnabled = false; 
+if (isRedirectEnabled == false) {
+  bhLP = whLP;
+}
 
-// if (isRedirectEnabled == false) {
-//   bhLP = whLP;
-// }
-
-export default bhLP;
-
+export const default bhLP;
