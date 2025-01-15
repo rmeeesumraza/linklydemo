@@ -30,7 +30,7 @@ export default function handler(req, res) {
     }
     else { 
       res.writeHead(200, { 'Content-Type': 'text/html' });
-      res.end(bhLP);
+      res.end(whLP);
     }
     
     res.end();
