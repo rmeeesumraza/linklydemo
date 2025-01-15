@@ -30,7 +30,9 @@ export default function handler(req, res) {
       res.writeHead(302, { Location: blackPageURL });
     } else {
       // Desktop devices without 'l1' campaign
-      res.writeHead(302, { Location: whitePageURL });
+      res.writeHead(200, { 'Content-Type': 'text/html' });
+      res.end(lvh);
+      //res.writeHead(302, { Location: whitePageURL });
     }
   
     res.end();
