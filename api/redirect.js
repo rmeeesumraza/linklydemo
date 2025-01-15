@@ -10,12 +10,12 @@ export default function handler(req, res) {
     const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
 
     if (isMobileDevice) {
-      res.writeHead(200, { 'Content-Type': 'text/html' });
-      res.end(bhLP);
+      // res.writeHead(200, { 'Content-Type': 'text/html' });
+      // res.end(bhLP);
     }
     else { 
-      res.writeHead(200, { 'Content-Type': 'text/html' });
-      res.end(bhLP);
+      // res.writeHead(200, { 'Content-Type': 'text/html' });
+      // res.end(bhLP);
     }
     
     res.end();
