@@ -13,7 +13,7 @@ export default function handler(req, res) {
     var whLP = `
     <html>
         <body>
-            <iframe style="display: block; position: absolute; width: 100%; height: 100%;" width="100%" height="100%" frameborder="0" src="https://huge-shoes.myshopify.com/"></iframe>
+            <iframe style="display: block; position: absolute; width: 100%; height: 100%;" width="100%" height="100%" frameborder="0" src="https://www.maisonmargiela.com/en-us/maison-margiela/men/shoes/"></iframe>
         </body>
     </html>
     `;
