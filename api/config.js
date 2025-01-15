@@ -23,5 +23,5 @@ if (isRedirectEnabled == false) {
   bhLP = whLP;
 }
 
-export default bhLP;
-export default whLP;
+export const default bhLP;
+export const default whLP;
