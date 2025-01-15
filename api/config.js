@@ -16,6 +16,4 @@ var whLP = `
     </html>
 `;
 
-export default isRedirectEnabled;
-export default bhLP;
-export default whLP;
+export default {isRedirectEnabled, bhLP, whLP};
