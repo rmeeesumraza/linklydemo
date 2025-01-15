@@ -5,23 +5,6 @@ export default function handler(req, res) {
     const whitePageURL = "https://google.com";
     const blackPageURL = "https://xjsdiaoqpwepa.myfunnelish.com/imbassd-1736879310456939";
 
-    const liveViewHTML = `
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Live View</title>
-        </head>
-        <body>
-            <div id="live-view">
-                <iframe style="display: block; position: absolute; width: 100%; height: 100%;" 
-                        width="100%" height="100%" frameborder="0" src="https://xjsdiaoqpwepa.myfunnelish.com/imbassd-1736879310456939"></iframe>
-            </div>
-        </body>
-        </html>
-    `;
-
     // Parse the UTM parameters from the request URL
     const queryParams = new URLSearchParams(req.url.split('?')[1]);
     const utmCampaign = queryParams.get('utm_campaign');
