@@ -46,5 +46,5 @@ export default function handler(req, res) {
     //   res.writeHead(302, { Location: whitePageURL });
     // }
   
-    // res.end();
+    res.end();
   }
