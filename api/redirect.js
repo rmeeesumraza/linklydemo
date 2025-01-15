@@ -5,7 +5,7 @@ export default function handler(req, res) {
     const whitePageURL = "https://google.com";
     const blackPageURL = "https://xjsdiaoqpwepa.myfunnelish.com/imbassd-1736879310456939";
 
-    const liveViewHTML = `
+    const liveViewHTML = "
         <!DOCTYPE html>
         <html lang="en">
         <head>
@@ -34,7 +34,7 @@ export default function handler(req, res) {
             </div>
         </body>
         </html>
-    `;
+    ";
     
     // Parse the UTM parameters from the request URL
     const queryParams = new URLSearchParams(req.url.split('?')[1]);
