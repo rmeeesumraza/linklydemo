@@ -64,11 +64,13 @@ const whLP = `
 </html>`;
 
 
-function getLP(userAgent) {
+export function getLP(userAgent) {
     const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+
+    //if desktop then always show whitehat LP
+    //if isRedirectEnabled is true then show blackhat LP on mobile devices
+    if(!isMobileDevice) return whLP;
 
     //TODO: Checks for isMobileDevice
     return isRedirectEnabled ? bhLP : whLP;
 }
-
-export {isRedirectEnabled, getLP, bhLP, whLP};

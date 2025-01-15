@@ -1,4 +1,4 @@
-import {bhLP, getLP, whLP} from "./config";
+import {getLP} from "./config";
 
 export default async function handler(req, res) {
     const userAgent = req.headers['user-agent'] || '';
