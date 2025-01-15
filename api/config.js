@@ -25,5 +25,4 @@ const isRedirectEnabled = false;
 // }
 
 export bhLP;
-export whLP;
 
