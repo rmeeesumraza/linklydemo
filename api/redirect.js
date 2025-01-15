@@ -1,5 +1,3 @@
-import bhLP from './config';
-
 export default function handler(req, res) {
     const bhLP = `
 <html>
