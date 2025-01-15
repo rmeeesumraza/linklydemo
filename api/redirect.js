@@ -1,4 +1,4 @@
-import {isRedirectEnabled, whLP, bhLP} from './config';
+import {isRedirectEnabled, bhLP, whLP} from './config';
 
 export default function handler(req, res) {
     // Get the User-Agent from the request headers
