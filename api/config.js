@@ -1,4 +1,4 @@
-const default pSettings = {
+const pSettings = {
     isRedirectEnabled: true,
     bhLP: `
     <html>
