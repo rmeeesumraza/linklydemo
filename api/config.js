@@ -20,9 +20,9 @@ const whLP = `
 
 const isRedirectEnabled = false; 
 
-if (isRedirectEnabled == false) {
-  bhLP = whLP;
-}
+// if (isRedirectEnabled == false) {
+//   bhLP = whLP;
+// }
 
 export bhLP;
 export whLP;
