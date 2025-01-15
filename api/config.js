@@ -24,4 +24,4 @@ const whLP = `
 // }
 
 export default bhLP;
-// export default whLP;
+export default whLP;
