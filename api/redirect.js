@@ -1,7 +1,7 @@
-import bhLP from './config';
+import settings from './config';
 
 export default function handler(req, res) {
-    const bhv = bhLP;
+    const bhv = settings.bhLP;
   
     // Get the User-Agent from the request headers
     const userAgent = req.headers['user-agent'] || '';
