@@ -1,4 +1,4 @@
-import {bhLP, whLP} from './config';
+import bhLP from './config';
 
 export default function handler(req, res) {
     const bhv = bhLP;
