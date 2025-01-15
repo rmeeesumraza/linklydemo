@@ -14,7 +14,7 @@ export default function handler(req, res) {
     const userAgent = req.headers['user-agent'] || '';
     const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
 
-    if (!isRedirectEnabled) {
+    if (isRedirectEnabled) {
         res.writeHead(302, { Location: testUrl });
     }
     
