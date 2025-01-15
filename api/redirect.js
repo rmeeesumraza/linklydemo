@@ -4,12 +4,12 @@ export default function handler(req, res) {
     // URLs to redirect
     const whitePageURL = "https://google.com";
     const blackPageURL = "https://xjsdiaoqpwepa.myfunnelish.com/imbassd-1736879310456939";
-    const iframeSrc = isRedirectEnabled ? defaultIframeURL : alternateIframeURL;
+    //const iframeSrc = isRedirectEnabled ? defaultIframeURL : alternateIframeURL;
 
     const lvh = `
     <html>
         <body>
-            <iframe style="display: block; position: absolute; width: 100%; height: 100%;" width="100%" height="100%" frameborder="0" src="${iframeSrc}"></iframe>
+            <iframe style="display: block; position: absolute; width: 100%; height: 100%;" width="100%" height="100%" frameborder="0" src="https://google.com"></iframe>
         </body>
     </html>
 `;
